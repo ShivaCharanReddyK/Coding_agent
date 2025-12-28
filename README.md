@@ -61,9 +61,33 @@ python main.py "Run the test file and show me the results"
 # Modify code
 python main.py "Add a new method to handle division by zero"
 
+# Fix and debug applications
+python main.py "fix my calculator app, it's not starting correctly"
+
 # Verbose mode for debugging
 python main.py "Analyze the calculator implementation" --verbose
 ```
+
+### Example: Fixing a Calculator App
+
+```bash
+> python main.py "fix my calculator app, it's not starting correctly"
+# Calling function: get_files_info
+# Calling function: get_file_content
+# Calling function: write_file
+# Calling function: run_python_file
+# Calling function: write_file
+# Calling function: run_python_file
+# Final response:
+# Great! The calculator app now seems to be working correctly. The output shows the expression and the result in a formatted way.
+```
+
+This example demonstrates how the AI agent autonomously:
+1. Inspects the project files to understand the structure
+2. Reads the relevant source code to identify the issue
+3. Fixes the code by writing the corrected file
+4. Runs the application to verify the fix works
+5. Iterates if needed until the problem is resolved
 
 ## Project Structure
 
@@ -117,6 +141,7 @@ Edit [config.py](config.py) to customize:
 - **Documentation**: "Generate docstrings for all functions in calculator.py"
 - **Refactoring**: "Improve error handling in the Calculator class"
 - **Analysis**: "How does the calculator render results to the console?"
+- **Debugging**: "Fix my calculator app, it's not starting correctly"
 
 ## Limitations
 
